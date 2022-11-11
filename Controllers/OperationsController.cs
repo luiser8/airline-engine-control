@@ -181,7 +181,7 @@ namespace EngineMonitoring.Controllers
             try
             {
                 var request = await _operationService.DeleteOperation(id);
-                return Created("Create", request.Id);
+                return Ok(request.Id);
             }
             catch (Exception ex)
             {
